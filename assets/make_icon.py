@@ -1,7 +1,8 @@
 """make_icon.py - dibuja el icono de image2png: un prisma que abre un haz blanco en un abanico
 pastel, sobre fondo transparente.
 
-    python assets/make_icon.py        -> src/tools/image2png/image2png.ico (16 a 256 px)
+    python assets/make_icon.py        -> src/tools/image2png/image2png.ico (16 a 256 px),
+                                         assets/icono-256.png y assets/icono-muestra.png
 
 Cada tamaño se dibuja APARTE a 8x y se reduce con Lanczos: un icono de 16 px no es la version de
 256 achicada (quedaria borroso), lleva trazos mas gruesos y menos detalle. Los tamaños chicos
@@ -71,6 +72,7 @@ def main() -> None:
         preview.alpha_composite(im, (x, 12 + (256 - im.height) // 2))
         x += im.width + 12
     preview.save(Path(__file__).resolve().parent / "icono-muestra.png")
+    images[-1].save(Path(__file__).resolve().parent / "icono-256.png")      # cabecera del README
     print(f"{OUT} ({OUT.stat().st_size} bytes, {len(SIZES)} tamaños)")
 
 

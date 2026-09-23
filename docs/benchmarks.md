@@ -10,7 +10,7 @@ Medidos con `python tests/bench.py` (mediana de 3 corridas, después de una de c
   12 niveles porque cada decodificador de JPEG redondea distinto).
 - `prisma --max` no se mide en las imágenes 4K: prueba todas las estrategias a deflate 12 en un solo
   flujo y tarda del orden de un minuto por foto (en la foto JPEG deja el PNG un 11 % más chico).
-- Condiciones: portátil con otras tareas corriendo en segundo plano (1 a 2 núcleos ocupados): los tiempos tienen ruido; las proporciones son lo que vale. Crear un proceso cuesta acá 200-400 ms (cmd /c exit: 419 ms de mediana) por el antivirus corporativo, y prisma y ffmpeg lo pagan en cada corrida.
+- Condiciones: portátil con otras tareas corriendo en segundo plano (1 a 2 núcleos ocupados): los tiempos tienen ruido; las proporciones son lo que vale. Crear un proceso cuesta acá 200-400 ms (cmd /c exit: 419 ms de mediana) por el antivirus de esta máquina, y prisma y ffmpeg lo pagan en cada corrida.
 
 ## foto JPEG 3840×2400 → PNG
 

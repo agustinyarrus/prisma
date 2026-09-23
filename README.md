@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/icono-256.png" width="128" alt=""></p>
+
 # prisma · image2png
 
 Convierte **cualquier imagen a PNG** desde la consola. Un solo `.exe` de ~800 KB, sin
@@ -136,7 +138,7 @@ condiciones en [`docs/benchmarks.md`](docs/benchmarks.md).
 Cómo leerla:
 
 - prisma es una **línea de comandos**: en cada corrida paga crear el proceso, que en esta máquina
-  cuesta 200–400 ms (el antivirus corporativo inyecta en cada proceso nuevo: `cmd /c exit` tarda
+  cuesta 200–400 ms (el antivirus de esta máquina inyecta en cada proceso nuevo: `cmd /c exit` tarda
   419 ms de mediana). Pillow y OpenCV corren dentro del mismo Python y no lo pagan; por eso en una
   imagen chica suelta Pillow es más rápido, y en una carpeta —un solo proceso, archivos en
   paralelo— prisma es 2,5× más rápido que Pillow y deja todo más chico.
@@ -242,3 +244,11 @@ Lo que hoy **no** hace, dicho sin vueltas:
   - AVIF animado (`avis`): se lee el primer cuadro;
   - HDR (PQ/HLG): se mapea desde la salida flotante del codec; `--icc srgb` no convierte CICP HDR.
 - **WebP animado**: depende del codec de Windows (no está cubierto por las pruebas).
+
+---
+
+## Licencia
+
+MIT (ver [`LICENSE`](LICENSE)). libdeflate, incluida en `third_party/libdeflate`, es de Eric Biggers
+y también MIT ([`COPYING`](third_party/libdeflate/COPYING)); sus cambios están en
+[`PATCHES.md`](third_party/libdeflate/PATCHES.md).
