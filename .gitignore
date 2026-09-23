@@ -1,0 +1,13 @@
+# compilados: bin/ se publica en las Releases, no en el repo
+build/
+bin/
+
+# salidas de las pruebas, el fuzzing y los benchmarks
+tests/out/
+__pycache__/
+*.pyc
+
+# editores
+.vs/
+.vscode/
+*.swp

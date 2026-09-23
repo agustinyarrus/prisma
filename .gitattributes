@@ -1,0 +1,4 @@
+# Todo el texto en LF, como se escribe; los binarios, tal cual.
+* text=auto eol=lf
+*.png binary
+*.ico binary
