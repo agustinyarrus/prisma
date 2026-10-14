@@ -1,3 +1,5 @@
+<p align="right"><sub><a href="README.en.md">English</a> · <b>Español</b></sub></p>
+
 <p align="center"><img src="assets/icono-256.png" width="128" alt=""></p>
 
 # prisma · image2png

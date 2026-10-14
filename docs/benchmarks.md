@@ -1,3 +1,5 @@
+<p align="right"><sub><a href="benchmarks.en.md">English</a> · <b>Español</b></sub></p>
+
 # Benchmarks
 
 Medidos con `python tests/bench.py` (mediana de 3 corridas, después de una de calentamiento).
